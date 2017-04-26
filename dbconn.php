@@ -3,7 +3,7 @@ session_start();
 $DB_SERVER = "localhost";
 $DB_USER = "root";
 $DB_PASS = "";
-$DB_NAME = "newsSystem";
+$DB_NAME = "newssystem";
 $DEBUG = 0;
 $sl = "";
 
@@ -29,8 +29,8 @@ else{
 
 $tables = 
 "
-CREATE DATABASE IF NOT EXISTS newsSystem;
-USE DATABASE newsSystem;
+CREATE DATABASE IF NOT EXISTS newssystem;
+USE DATABASE newssystem;
 CREATE TABLE IF NOT EXISTS `news` (
 	`newsID` INT(7) AUTO_INCREMENT,
 	`news` TEXT NOT NULL,
@@ -40,6 +40,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 	`userID` INT(7) AUTO_INCREMENT,
 	`username` VARCHAR(255) UNIQUE NOT NULL,
 	`password` VARCHAR(50) NOT NULL,
+	`oath_provider` enum('','facebook','google','twitter') COLLATE utf8_unicode_ci NOT NULL,
 	 PRIMARY KEY(`userID`)
 ); 
 CREATE TABLE IF NOT EXISTS `comment` (

@@ -1,4 +1,4 @@
-	<nav class="navbar navbar-toggleable-sm navbar-inverse fixed-top bg-primary">
+<nav class="navbar navbar-toggleable-sm navbar-inverse fixed-top bg-primary">
 	<div class="container">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
 		 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,7 +11,7 @@
 					<a class="nav-link" href="index.php">Home</a>
 				</li>
 				<li class="nav-item <?php if($page=='developers') echo 'active' ?>">
-					<a class="nav-link" href="developers.php">Developers</a>
+					<a class="nav-link" href="developers.php">Our Team</a>
 				</li>
 				<?php 
 					if( isset($_SESSION['username']) ){
@@ -36,7 +36,7 @@
 						<a class="nav-link" href="register.php">Register</a>
 						</li>';
 
-						} else if($page=="login") {
+						} else  {
 							echo '
 						<li class="nav-item '; if($page=="login") echo 'active'; echo'">
 						<a class="nav-link" href="login.php">Login</a>

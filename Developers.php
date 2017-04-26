@@ -27,7 +27,7 @@ $page = "developers";
     <?php include("navbar.php"); ?>
     <div class="container2">
       <div class="at-section">
-        <div class="at-section__title">The Team</div>
+        <div class="at-section__title">Our Team</div>
       </div>
       <div class="at-grid" data-column="4">
         <div class="at-column">
